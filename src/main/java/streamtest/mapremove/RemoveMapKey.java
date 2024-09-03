@@ -8,11 +8,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * @author zc.zhou
  * @Description
  * @create 2024-09-03 14:18
  */
+@Slf4j
 public class RemoveMapKey {
 
   private static Map<String, Integer> map = new HashMap<>();
@@ -30,7 +33,7 @@ public class RemoveMapKey {
     for (String key : removedSet) {
       map.remove(key);
     }
-    System.out.println(map);
+    log.info("map={}", map);
   }
 
   @Test

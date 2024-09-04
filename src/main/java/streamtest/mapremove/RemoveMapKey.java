@@ -37,6 +37,13 @@ public class RemoveMapKey {
   }
 
   @Test
+  void testFunForEach() {
+    Set<String> removedSet = Set.of("zzc", "zzc1", "zzc345");
+    removedSet.forEach(key -> map.remove(key));
+    log.info("map={}", map);
+  }
+
+  @Test
   void testFun() {
     Set<String> removedSet = Set.of("zzc", "zzc1", "zzc345");
     Assert.assertThrows(ConcurrentModificationException.class, () -> extracted(map, removedSet));

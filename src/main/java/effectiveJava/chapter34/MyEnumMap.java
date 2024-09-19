@@ -4,11 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.EnumMap;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Set;
-
-import javax.print.attribute.SetOfIntegerSyntax;
 
 import lombok.extern.slf4j.Slf4j;
 
